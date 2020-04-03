@@ -36,7 +36,7 @@ public class TC02_RedBusSearch {
 		driver.findElementById("dest").sendKeys(Keys.ENTER);
 
 		//Click on OnWard Date
-		driver.findElementByXPath("//label[@for='onward_cal']").click();
+		driver.findElementById("onward_cal']").click();
 
 		//Click Current day
 		//driver.findElementByXPath("(//td[@class='current day'])[2]").click();
