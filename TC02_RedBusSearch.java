@@ -36,12 +36,13 @@ public class TC02_RedBusSearch {
 		driver.findElementById("dest").sendKeys(Keys.ENTER);
 
 		//Click on OnWard Date
-		driver.findElementById("onward_cal']").click();
+		driver.findElementById("onward_cal").click();
 
 		//Click Current day
 		//driver.findElementByXPath("(//td[@class='current day'])[2]").click();
 
-		Thread.sleep(3000);
+		//Not Needed
+		//Thread.sleep(3000);
 
 		//Select April 30
 		driver.findElementByXPath("(//td[text()='30'])[2]").click();
@@ -50,10 +51,10 @@ public class TC02_RedBusSearch {
 		driver.findElementById("search_btn").click();
 
 		//Select before 6AM
-		driver.findElementByXPath("(//label[@for='dtBefore 6 am'])[1]").click();
+		driver.findElementByXPath("(//label[@for='dtBefore 6 am'])").click();
 
 		//Select Sleeper
-		driver.findElementByXPath("(//label[@for='bt_SLEEPER'])[1]").click();
+		driver.findElementByXPath("(//label[@for='bt_SLEEPER'])").click();
 
 		//Click Sort on Seats Available
 		//driver.findElementByXPath("(//div[contains(@class,'w-15 fl')]//a)[2]").click();
